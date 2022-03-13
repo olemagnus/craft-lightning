@@ -1,0 +1,17 @@
+columnSuffix: zdkhpczo
+contentColumnType: datetime
+fieldGroup: c349cc52-da8a-451d-8a98-751c566168d0 # Common
+handle: lastUpdated
+instructions: ''
+name: 'Last updated'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: true
+  showTimeZone: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

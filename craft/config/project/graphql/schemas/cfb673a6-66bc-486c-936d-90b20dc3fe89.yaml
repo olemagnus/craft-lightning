@@ -1,0 +1,14 @@
+isPublic: false
+name: Remix
+scope:
+  - 'sections.e1223095-3d97-4f75-9aef-66341b5619e4:read' # Articles
+  - 'entrytypes.ad9425cf-a043-40d7-b3d3-decca1e7de73:read' # Default
+  - 'sections.7d795cd5-6c71-4518-a005-10a7beed98c9:read' # Authors
+  - 'entrytypes.d13d6228-1b2f-4c8d-af73-69b118a532b1:read' # Default
+  - 'sections.a9a45991-6ecb-44f6-aa57-07f0db48ac02:read' # Info
+  - 'entrytypes.7c6d83b3-dbac-412a-90f0-06c7553ac909:read' # Default
+  - 'categorygroups.8759c6fb-7cf6-42f1-83d5-ca77e42ed045:read' # Article Subject
+  - 'navigationNavs.all:read'
+  - 'navigationNavs.a5219a7c-bf67-484b-bc8d-efa88dfd8911:read' # Main menu
+  - 'retour.all:read'
+  - 'seomatic.all:read'

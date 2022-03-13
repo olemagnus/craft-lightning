@@ -1,0 +1,24 @@
+// Redirection
+query {
+  retourResolveRedirect(uri: "/personvern") {
+    redirectDestUrl
+    redirectHttpCode
+    hitCount
+    enabled
+  }
+}
+
+// Menu
+query {
+  nodes {
+    title
+    status
+    nodeUri
+    level
+    newWindow
+    customAttributes {
+      attribute
+      value
+    }
+  }
+}

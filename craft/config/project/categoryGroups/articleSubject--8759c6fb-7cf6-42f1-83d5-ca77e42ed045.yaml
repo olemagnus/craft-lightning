@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  eaf5ba4f-b018-4e83-b03b-00ad426e4f3f:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: articleSubject
+name: 'Article Subject'
+siteSettings:
+  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+    hasUrls: true
+    template: null
+    uriFormat: 'emne/{slug}'
+structure:
+  maxLevels: null
+  uid: 16835de5-567e-4be7-a0da-092ed718ca85

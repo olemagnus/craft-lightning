@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: authors
+name: Authors
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'forfatter/{slug}'
+type: channel

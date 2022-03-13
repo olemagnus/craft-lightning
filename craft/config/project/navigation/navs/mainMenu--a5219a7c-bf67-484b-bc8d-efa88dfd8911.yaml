@@ -1,0 +1,29 @@
+handle: mainMenu
+instructions: ''
+maxNodes: ''
+name: 'Main menu'
+permissions:
+  craft\elements\Asset:
+    enabled: ''
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions:
+      - 'section:a9a45991-6ecb-44f6-aa57-07f0db48ac02' # Info
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  0d38519c-a637-4831-8f99-16c480a86356: null # craft-lightning
+sortOrder: 1
+structure:
+  maxLevels: '2'
+  uid: 2014f253-8fdf-4aa1-a72a-56c01931df04
