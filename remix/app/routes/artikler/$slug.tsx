@@ -1,5 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
-import { useLoaderData, json, redirect, LoaderFunction } from "remix";
+import { useLoaderData, json, LoaderFunction, redirect } from "remix";
+import { retourResolveRedirect, checkRedirect } from "~/retourResolveRedirect";
+import type { RetourResolveRedirect } from "~/retourResolveRedirect";
 
 const EntryQuery = gql`
   query ($slug: [String!]) {
@@ -26,44 +28,11 @@ export const loader: LoaderFunction = async ({ params, request }) => {
 
   if (!entry) {
     const uri = new URL(request.url).pathname;
-    const retourRedirected = new Headers(request.headers).has(
-      "retour_redirected"
+    const rrr: RetourResolveRedirect = await retourResolveRedirect(
+      request,
+      uri
     );
-
-    // If we have already redirected once and we are about to redirect a second time, then we return with a 404 page to prevent a redirect infinite loop. This will also help us identify bad redirects which should go directly to the location. This is only for internal redirects.
-    if (retourRedirected) {
-      throw new Response("Not found", {
-        status: 404,
-      });
-    }
-
-    const RedirectQuery = gql`
-      query ($uri: String!) {
-        retourResolveRedirect(uri: $uri) {
-          redirectDestUrl
-          redirectHttpCode
-          enabled
-        }
-      }
-    `;
-
-    const { retourResolveRedirect: rrr = null } = await new GraphQLClient(
-      endpoint,
-      options
-    ).request(RedirectQuery, { uri });
-
-    if (rrr?.enabled && rrr?.redirectHttpCode !== 410) {
-      return redirect(rrr.redirectDestUrl, {
-        status: rrr.redirectHttpCode,
-        headers: {
-          retour_redirected: "true",
-        },
-      });
-    }
-
-    throw new Response(rrr?.redirectHttpCode === 410 ? "Gone" : "Not found", {
-      status: rrr?.redirectHttpCode || 404,
-    });
+    return checkRedirect(rrr);
   }
 
   return json({
