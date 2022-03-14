@@ -1,7 +1,10 @@
 import { GraphQLClient, gql } from "graphql-request";
-import { useLoaderData, json, LoaderFunction, redirect } from "remix";
-import { retourResolveRedirect, checkRedirect } from "~/retourResolveRedirect";
-import type { RetourResolveRedirect } from "~/retourResolveRedirect";
+import { useLoaderData, json, LoaderFunction } from "remix";
+import {
+  retourResolveRedirect,
+  checkRedirect,
+} from "~/utils/retourResolveRedirect";
+import type { RetourResolveRedirect } from "~/utils/retourResolveRedirect";
 
 const EntryQuery = gql`
   query ($slug: [String!]) {

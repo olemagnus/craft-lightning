@@ -3,7 +3,7 @@ import {
   checkRedirect,
   retourResolveRedirect,
   RetourResolveRedirect,
-} from "~/retourResolveRedirect";
+} from "~/utils/retourResolveRedirect";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const uri = new URL(request.url).pathname;
