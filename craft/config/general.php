@@ -44,6 +44,12 @@ return [
         'userSessionDuration' => 0,
 
         // We only allow localhost in dev mode
-        'allowedGraphqlOrigins' => ["localhost:3000"]
+        'allowedGraphqlOrigins' => ["localhost:3000"],
+
+        'previewIframeResizerOptions' => [
+            'checkOrigin' => [
+                'http://localhost:3000',
+            ],
+        ],
     ]
 ];

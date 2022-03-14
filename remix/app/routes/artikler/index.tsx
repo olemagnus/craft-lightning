@@ -1,5 +1,6 @@
-import { GraphQLClient, gql } from "graphql-request";
-import { useLoaderData, json, Link } from "remix";
+import { gql } from "graphql-request";
+import { useLoaderData, json, Link, LoaderFunction } from "remix";
+import { gqlCraftClient } from "~/utils/gqlCraftClient";
 
 const EntriesQuery = gql`
   {
@@ -12,17 +13,8 @@ const EntriesQuery = gql`
   }
 `;
 
-export const loader = async () => {
-  const endpoint = process.env.CRAFT_ENDPOINT as string;
-  const options = {
-    headers: {
-      Authorization: process.env.CRAFT_GQL_TOKEN as string,
-    },
-  };
-
-  const { entries } = await new GraphQLClient(endpoint, options).request(
-    EntriesQuery
-  );
+export const loader: LoaderFunction = async ({ request }) => {
+  const { entries } = await gqlCraftClient(request).request(EntriesQuery);
 
   return json({
     entries,

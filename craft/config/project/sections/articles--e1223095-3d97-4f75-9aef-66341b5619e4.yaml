@@ -10,7 +10,7 @@ previewTargets:
         - 'Primary entry page'
       -
         - urlFormat
-        - '{url}'
+        - 'http://localhost:3000/artikler/{slug}'
       -
         - refresh
         - '1'
