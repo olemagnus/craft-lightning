@@ -1,0 +1,9 @@
+baseUrl: '@web/'
+enabled: true
+handle: norwegian
+hasUrls: true
+language: 'no'
+name: Norwegian
+primary: false
+siteGroup: 3290c17b-421e-4aa8-a8b3-a2421d622482 # craft-lightning
+sortOrder: 2

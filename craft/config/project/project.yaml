@@ -1,4 +1,4 @@
-dateModified: 1647288762
+dateModified: 1649608019
 email:
   fromEmail: ole@feed.no
   fromName: craft-lightning
@@ -14,13 +14,14 @@ meta:
     48beea28-0e35-4c22-93c2-04658054ed1c: 'Last updated' # Last updated
     54cca69c-93f8-4647-a5a6-51c8d29a361c: 'Rich text' # Rich text
     0502c870-95b6-46f7-81b4-1f72d3af6519: Article # Article
+    953b6d6e-9a09-4b58-966a-56ba5b226f89: 'Main menu' # Main menu
     3290c17b-421e-4aa8-a8b3-a2421d622482: craft-lightning # craft-lightning
     6832ab3c-eaa1-4647-84c2-be46198d0eac: Text # Text
     8759c6fb-7cf6-42f1-83d5-ca77e42ed045: 'Article Subject' # Article Subject
+    9542b051-1adf-44cd-9b75-d7d99e5b1404: Norwegian # Norwegian
     089157ce-24a9-4a32-b22b-b124218c6a07: Text # Text
     280555e5-9edc-4032-9376-7c01f724e0bf: SEO # SEO
     a9a45991-6ecb-44f6-aa57-07f0db48ac02: Info # Info
-    a5219a7c-bf67-484b-bc8d-efa88dfd8911: 'Main menu' # Main menu
     ad9425cf-a043-40d7-b3d3-decca1e7de73: Default # Default
     c349cc52-da8a-451d-8a98-751c566168d0: Common # Common
     cdfdf5b8-56f7-4edf-bcd7-3532ab9c9b55: Intro # Intro
@@ -55,10 +56,55 @@ plugins:
     enabled: true
     licenseKey: ICUMCGUE6XW1BSX8R0DWLOD8
     schemaVersion: 3.0.11
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: false
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - facebook
+        - linkedin
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: '1'
+      truncateTitleTags: '1'
 system:
   edition: pro
   live: true
   name: craft-lightning
   retryDuration: null
-  schemaVersion: 3.7.32
+  schemaVersion: 3.7.33
   timeZone: Europe/Oslo

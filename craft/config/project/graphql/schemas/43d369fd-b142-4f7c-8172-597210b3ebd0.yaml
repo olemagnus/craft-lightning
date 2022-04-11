@@ -9,5 +9,5 @@ scope:
   - 'entrytypes.7c6d83b3-dbac-412a-90f0-06c7553ac909:read' # Default
   - 'categorygroups.8759c6fb-7cf6-42f1-83d5-ca77e42ed045:read' # Article Subject
   - 'navigationNavs.all:read'
-  - 'navigationNavs.a5219a7c-bf67-484b-bc8d-efa88dfd8911:read' # Main menu
+  - 'navigationNavs.a5219a7c-bf67-484b-bc8d-efa88dfd8911:read'
   - 'retour.all:read'

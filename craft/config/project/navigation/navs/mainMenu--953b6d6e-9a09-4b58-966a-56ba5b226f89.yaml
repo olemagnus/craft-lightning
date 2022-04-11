@@ -11,19 +11,21 @@ permissions:
     permissions: '*'
   craft\elements\Entry:
     enabled: '1'
-    permissions:
-      - 'section:a9a45991-6ecb-44f6-aa57-07f0db48ac02' # Info
+    permissions: '*'
   craft\elements\Tag:
     enabled: ''
     permissions: '*'
   custom:
     enabled: '1'
   verbb\navigation\nodetypes\PassiveType:
-    enabled: '1'
+    enabled: ''
+  verbb\navigation\nodetypes\SiteType:
+    enabled: ''
 propagateNodes: false
 siteSettings:
-  0d38519c-a637-4831-8f99-16c480a86356: null # craft-lightning
-sortOrder: 1
+  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+    enabled: '1'
+sortOrder: 2
 structure:
-  maxLevels: '2'
-  uid: 2014f253-8fdf-4aa1-a72a-56c01931df04
+  maxLevels: null
+  uid: 1a797501-6f16-4cf3-b825-ddd769c41b1c
