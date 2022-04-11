@@ -2,14 +2,15 @@ import { gql, GraphQLClient } from "graphql-request";
 import { redirect } from "remix";
 
 export type RetourResolveRedirect = {
-  redirectDestUrl: string | null
-  redirectHttpCode: number | null
-  enabled: boolean | null
-}
+  redirectDestUrl: string | null;
+  redirectHttpCode: number | null;
+  enabled: boolean | null;
+};
 
-export const retourResolveRedirect =
-  async (request: Request, uri: string): Promise<RetourResolveRedirect> => {
-
+export const retourResolveRedirect = async (
+  request: Request,
+  uri: string
+): Promise<RetourResolveRedirect> => {
   const endpoint = process.env.CRAFT_ENDPOINT as string;
   const options = {
     headers: {
@@ -39,34 +40,38 @@ export const retourResolveRedirect =
   `;
 
   try {
-    const { retourResolveRedirect } = await new GraphQLClient(
-      endpoint,
-      options
-    ).request(RedirectQuery, { uri }).catch(err => { console.error(err); return null });
+    const { retourResolveRedirect } = await new GraphQLClient(endpoint, options)
+      .request(RedirectQuery, {
+        uri,
+        seo: uri, // We need to send in the uri as seo for the gql query to read it as String instead of just [String]
+      })
+      .catch((err) => {
+        console.error(err);
+        return null;
+      });
 
-    return retourResolveRedirect
-  }
-  // If Craft is down or doesn't work for some reason we just return a 404 page instead
-  catch (error) {
+    return retourResolveRedirect;
+  } catch (error) {
+    // If Craft is down or doesn't work for some reason we just return a 404 page instead
     throw new Response("Not found", {
-      status: 404
+      status: 404,
     });
   }
-}
+};
 
 export const checkRedirect = (rrr: RetourResolveRedirect): Response => {
   // If there is no redirect code, then there is no redirect and its a 404.
   // Also if the redirect rule is disabled we also give a 404 page.
   if (!rrr?.redirectHttpCode || !rrr?.enabled) {
     throw new Response("Not found", {
-      status: 404
+      status: 404,
     });
   }
 
   // Page is gone, works pretty much like a 404
   if (rrr?.redirectHttpCode === 410) {
     throw new Response("Gone", {
-      status: 410
+      status: 410,
     });
   }
 
@@ -76,4 +81,4 @@ export const checkRedirect = (rrr: RetourResolveRedirect): Response => {
       retour_redirected: "true",
     },
   });
-}
+};

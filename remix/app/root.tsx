@@ -7,11 +7,7 @@ import {
   ScrollRestoration,
   useCatch,
 } from "remix";
-import type { MetaFunction } from "remix";
-
-export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
-};
+import { DynamicLinks } from "remix-utils";
 
 export function CatchBoundary() {
   const caught = useCatch();
@@ -40,6 +36,7 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
+        <DynamicLinks />
         <Links />
       </head>
       <body>
