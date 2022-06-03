@@ -2,7 +2,7 @@
 /**
  * General Configuration
  *
- * All of your system's general configuration settings go in here. You can see a
+ * All of your system"s general configuration settings go in here. You can see a
  * list of the available settings in vendor/craftcms/cms/src/config/GeneralConfig.php.
  *
  * @see \craft\config\GeneralConfig
@@ -10,47 +10,46 @@
 
 use craft\helpers\App;
 
-$isDev = App::env('ENVIRONMENT') === 'dev';
-$isProd = App::env('ENVIRONMENT') === 'production';
+$isDev = App::env("ENVIRONMENT") === "dev";
+$isProd = App::env("ENVIRONMENT") === "production";
 
 return [
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 1,
+    "*" => [
+        // Default Week Start Day (0 = Sunday, 1 = Monday...)
+        "defaultWeekStartDay" => 1,
 
-    // Whether generated URLs should omit "index.php"
-    'omitScriptNameInUrls' => true,
+        // Whether generated URLs should omit "index.php"
+        "omitScriptNameInUrls" => true,
 
-    // The URI segment that tells Craft to load the control panel
-    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
+        // The URI segment that tells Craft to load the control panel
+        "cpTrigger" => App::env("CP_TRIGGER") ?: "admin",
 
-    // The secure key Craft will use for hashing and encrypting data
-    'securityKey' => App::env('SECURITY_KEY'),
+        // The secure key Craft will use for hashing and encrypting data
+        "securityKey" => App::env("SECURITY_KEY"),
 
-    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
-    'devMode' => $isDev,
+        // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
+        "devMode" => $isDev,
 
-    // Whether administrative changes should be allowed
-    'allowAdminChanges' => $isDev,
+        // Whether administrative changes should be allowed
+        "allowAdminChanges" => $isDev,
 
-    // Whether crawlers should be allowed to index pages and following links
-    'disallowRobots' => !$isProd,
+        // Whether crawlers should be allowed to index pages and following links
+        "disallowRobots" => !$isProd,
 
-    'headlessMode' => true,
+        "headlessMode" => true,
 
-    'api' => 'graphql/api',
-
-    'limitAutoSlugsToAscii' => true,
-
-    'dev' => [
-        // Don't log out users in dev mode
-        'userSessionDuration' => 0,
+        "limitAutoSlugsToAscii" => true
+    ],
+    "dev" => [
+        // Don"t log out users in dev mode
+        "userSessionDuration" => 0,
 
         // We only allow localhost in dev mode
-        'allowedGraphqlOrigins' => ["localhost:3000"],
+        "allowedGraphqlOrigins" => ["localhost:3000"],
 
-        'previewIframeResizerOptions' => [
-            'checkOrigin' => [
-                'http://localhost:3000',
+        "previewIframeResizerOptions" => [
+            "checkOrigin" => [
+                "http://localhost:3000",
             ],
         ],
     ]

@@ -1,3 +1,5 @@
 description: ''
 handle: demoGruppe
 name: Demo-gruppe
+permissions:
+  - 'assignusergroup:7eb7fa21-b426-4227-b3ff-a91ad0bc7317' # Demo-gruppe

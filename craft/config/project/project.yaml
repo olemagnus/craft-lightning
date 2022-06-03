@@ -1,4 +1,4 @@
-dateModified: 1650119386
+dateModified: 1654277204
 email:
   fromEmail: ole@feed.no
   fromName: craft-lightning
@@ -37,7 +37,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: H36DNUJAUL5V3VIFYTZFU4ZS
-    schemaVersion: 1.0.21
+    schemaVersion: 2.0.2
   redactor:
     edition: standard
     enabled: true
@@ -106,5 +106,5 @@ system:
   live: true
   name: craft-lightning
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: Europe/Oslo

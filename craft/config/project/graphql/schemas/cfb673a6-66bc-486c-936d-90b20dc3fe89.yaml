@@ -12,3 +12,5 @@ scope:
   - 'navigationNavs.a5219a7c-bf67-484b-bc8d-efa88dfd8911:read'
   - 'retour.all:read'
   - 'seomatic.all:read'
+  - 'sites.0d38519c-a637-4831-8f99-16c480a86356:read' # English
+  - 'sites.eaa3216a-fb51-4ff8-877a-db0698655c7b:read' # Norwegian
