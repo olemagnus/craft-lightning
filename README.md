@@ -1,4 +1,4 @@
-# craft-lightning
+# Craft Lightning (Remix)
 
 A monorepo containing Headless Craft and Remix. 
 
@@ -22,4 +22,8 @@ TODO:
 * Automatic generating TypeScript types from GraphQL queries
 * If using Cloudflare workers: Look into using R2 for assets, image optimizing, video streaming and KV storage for caching things like blurhash.
 * Matrix block rendering
+* Pagination from Craft
 * Nested structure entries in Remix router
+* Look into if Prisma works with Cloudflare workers, and look into using Cloudflare D1 database for Prisma
+* Formie (Craft plugin)
+* Make all of this a toolkit installed with NPM
