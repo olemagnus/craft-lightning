@@ -1,4 +1,4 @@
-baseUrl: '@web/'
+baseUrl: '@web/no/'
 enabled: true
 handle: norwegian
 hasUrls: true

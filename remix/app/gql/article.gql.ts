@@ -1,12 +1,16 @@
 import { gql } from "graphql-request";
-import { seomaticFields } from "./seomaticFields.gql";
+import { seomaticEntryFields } from "./seomaticEntryFields.gql";
 
 export const ArticleEntryQuery = gql`
-  ${seomaticFields}
-  query ArticleEntryQuery($uri: [String], $seo: String) {
+  ${seomaticEntryFields}
+  query ArticleEntryQuery(
+    $uri: [String]
+    $seoUri: String
+    $siteHandle: String
+  ) {
     entry(section: "articles", uri: $uri) {
       ... on articles_default_Entry {
-        ...seomaticFields
+        ...seomaticEntryFields
         title
         id
         uri

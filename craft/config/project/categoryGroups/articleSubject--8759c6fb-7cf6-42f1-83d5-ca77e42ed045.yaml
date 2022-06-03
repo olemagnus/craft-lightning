@@ -32,11 +32,11 @@ fieldLayouts:
 handle: articleSubject
 name: 'Article Subject'
 siteSettings:
-  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+  0d38519c-a637-4831-8f99-16c480a86356: # English
     hasUrls: true
     template: null
     uriFormat: 'emne/{slug}'
-  9542b051-1adf-44cd-9b75-d7d99e5b1404: # Norwegian
+  eaa3216a-fb51-4ff8-877a-db0698655c7b: # Norwegian
     hasUrls: true
     template: null
     uriFormat: 'emne/{slug}'

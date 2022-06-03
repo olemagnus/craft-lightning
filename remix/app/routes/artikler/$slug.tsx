@@ -10,9 +10,18 @@ import { ArticleEntryQuery } from "~/gql/article.gql";
 import { parseSEO } from "~/utils/parseSEO";
 import { DynamicLinksFunction } from "remix-utils";
 
-export const loader: LoaderFunction = async ({ params, request }) => {
+const craftPathName = (url: string): string => {
+  // Takes an URL and returns the pathname without the leading slash
+  const urlObj = new URL(url);
+  return urlObj.pathname.at(0) === "/"
+    ? urlObj.pathname.slice(1, urlObj.pathname.length)
+    : urlObj.pathname;
+};
+
+export const loader: LoaderFunction = async ({ request, params }) => {
+  console.log(craftPathName(request.url));
   const { entry } = await gqlCraftClient(request).request(ArticleEntryQuery, {
-    slug: params.slug,
+    uri: craftPathName(request.url),
   });
 
   if (!entry) {

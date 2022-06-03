@@ -1,11 +1,11 @@
-dateModified: 1649608019
+dateModified: 1650119386
 email:
   fromEmail: ole@feed.no
   fromName: craft-lightning
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    0d38519c-a637-4831-8f99-16c480a86356: craft-lightning # craft-lightning
+    0d38519c-a637-4831-8f99-16c480a86356: English # English
     7c6d83b3-dbac-412a-90f0-06c7553ac909: Default # Default
     7d795cd5-6c71-4518-a005-10a7beed98c9: Authors # Authors
     7eb7fa21-b426-4227-b3ff-a91ad0bc7317: Demo-gruppe # Demo-gruppe
@@ -18,7 +18,6 @@ meta:
     3290c17b-421e-4aa8-a8b3-a2421d622482: craft-lightning # craft-lightning
     6832ab3c-eaa1-4647-84c2-be46198d0eac: Text # Text
     8759c6fb-7cf6-42f1-83d5-ca77e42ed045: 'Article Subject' # Article Subject
-    9542b051-1adf-44cd-9b75-d7d99e5b1404: Norwegian # Norwegian
     089157ce-24a9-4a32-b22b-b124218c6a07: Text # Text
     280555e5-9edc-4032-9376-7c01f724e0bf: SEO # SEO
     a9a45991-6ecb-44f6-aa57-07f0db48ac02: Info # Info
@@ -28,6 +27,7 @@ meta:
     cfb673a6-66bc-486c-936d-90b20dc3fe89: Remix # Remix
     d13d6228-1b2f-4c8d-af73-69b118a532b1: Default # Default
     e1223095-3d97-4f75-9aef-66341b5619e4: Articles # Articles
+    eaa3216a-fb51-4ff8-877a-db0698655c7b: Norwegian # Norwegian
 plugins:
   feed-me:
     edition: standard

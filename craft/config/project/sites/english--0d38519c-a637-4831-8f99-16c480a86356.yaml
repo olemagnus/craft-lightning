@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
-handle: default
+enabled: true
+handle: english
 hasUrls: true
 language: en-US
-name: craft-lightning
+name: English
 primary: true
 siteGroup: 3290c17b-421e-4aa8-a8b3-a2421d622482 # craft-lightning
 sortOrder: 1

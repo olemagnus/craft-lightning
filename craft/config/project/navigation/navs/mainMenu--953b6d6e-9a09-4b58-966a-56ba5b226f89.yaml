@@ -23,7 +23,7 @@ permissions:
     enabled: ''
 propagateNodes: false
 siteSettings:
-  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+  0d38519c-a637-4831-8f99-16c480a86356: # English
     enabled: '1'
 sortOrder: 2
 structure:

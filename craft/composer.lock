@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "542d658e9f8643a89eed7e0fc02f48e1",
+    "content-hash": "eecbae8b50577b89bd88877e4baf736e",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -632,11 +632,11 @@
         },
         {
             "name": "craftcms/feed-me",
-            "version": "4.4.3",
+            "version": "4.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/6f11dd4e6aaeb7b986cbe8254e6448765d5cd204",
-                "reference": "6f11dd4e6aaeb7b986cbe8254e6448765d5cd204",
+                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/f38b82774ddcb25e007b346b2b3576cd41c19f3d",
+                "reference": "f38b82774ddcb25e007b346b2b3576cd41c19f3d",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +685,7 @@
                 "docs": "https://docs.craftcms.com/feed-me/v4/",
                 "rss": "https://github.com/craftcms/feed-me/commits/master.atom"
             },
-            "time": "2022-04-07T00:13:08+00:00"
+            "time": "2022-04-21T19:37:00+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -852,11 +852,11 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/9d8345bc7920b6657bd3fac396efee6bf8609ed6",
-                "reference": "9d8345bc7920b6657bd3fac396efee6bf8609ed6",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/04518e63ae94effd4e352838278662c928c84e8c",
+                "reference": "04518e63ae94effd4e352838278662c928c84e8c",
                 "shasum": ""
             },
             "type": "library",
@@ -876,7 +876,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2021-08-18T14:46:23+00:00"
+            "time": "2022-04-17T02:10:54+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1570,11 +1570,11 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.11",
+            "version": "5.2.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ab6744b7296ded80f8cc4f9509abbff393399aa",
-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
                 "shasum": ""
             },
             "require": {
@@ -1621,7 +1621,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2021-07-22T09:24:00+00:00"
+            "time": "2022-04-13T08:02:27+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1972,11 +1972,11 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.9.0",
+            "version": "1.11.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/aa70e813a6ad3d1558fc927863d47309b4c23e69",
-                "reference": "aa70e813a6ad3d1558fc927863d47309b4c23e69",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
                 "shasum": ""
             },
             "require": {
@@ -1999,7 +1999,7 @@
                 }
             ],
             "description": "Mime-type detection for Flysystem",
-            "time": "2021-11-21T11:48:40+00:00"
+            "time": "2022-04-17T13:12:02+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -2154,11 +2154,11 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/47087da878be95b7bd79bb1b8f5f4f49f2bfbe5c",
-                "reference": "47087da878be95b7bd79bb1b8f5f4f49f2bfbe5c",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0f3c8129e2a95485e727a880db1d0f9adf6144e6",
+                "reference": "0f3c8129e2a95485e727a880db1d0f9adf6144e6",
                 "shasum": ""
             },
             "require": {
@@ -2189,7 +2189,7 @@
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues"
             },
-            "time": "2021-10-11T16:38:14+00:00"
+            "time": "2022-04-17T16:40:28+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
@@ -2283,11 +2283,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.29",
+            "version": "3.4.30",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/6054b698a49ed9d40a049081bfa824cf277f9025",
-                "reference": "6054b698a49ed9d40a049081bfa824cf277f9025",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/238b6936d8e755917e77db6300f9d827eeca2ca2",
+                "reference": "238b6936d8e755917e77db6300f9d827eeca2ca2",
                 "shasum": ""
             },
             "require": {
@@ -2337,7 +2337,7 @@
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support"
             },
-            "time": "2022-04-08T22:51:16+00:00"
+            "time": "2022-04-18T22:16:40+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5102,11 +5102,11 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.11.5",
+            "version": "v14.11.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/ffa431c0821821839370a68dab3c2597c06bf7f0",
-                "reference": "ffa431c0821821839370a68dab3c2597c06bf7f0",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6070542725b61fc7d0654a8a9855303e5e157434",
+                "reference": "6070542725b61fc7d0654a8a9855303e5e157434",
                 "shasum": ""
             },
             "require": {
@@ -5133,7 +5133,7 @@
                 "api",
                 "graphql"
             ],
-            "time": "2022-01-24T11:13:31+00:00"
+            "time": "2022-04-13T16:25:32+00:00"
         },
         {
             "name": "yiisoft/yii2",

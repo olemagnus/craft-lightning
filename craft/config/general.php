@@ -39,6 +39,8 @@ return [
 
     'api' => 'graphql/api',
 
+    'limitAutoSlugsToAscii' => true,
+
     'dev' => [
         // Don't log out users in dev mode
         'userSessionDuration' => 0,

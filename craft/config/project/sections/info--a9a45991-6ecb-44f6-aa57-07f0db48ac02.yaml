@@ -16,7 +16,12 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  0d38519c-a637-4831-8f99-16c480a86356: # craft-lightning
+  0d38519c-a637-4831-8f99-16c480a86356: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'info/{slug}'
+  eaa3216a-fb51-4ff8-877a-db0698655c7b: # Norwegian
     enabledByDefault: true
     hasUrls: true
     template: null
